@@ -1,0 +1,81 @@
+
+<%@page import="TheoryOfAlgorithms.Markichev.Lab4.Lab4"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Lab 4</title>
+    </head>
+    <body>
+        <a href="index.jsp">Back to landing page</a>
+        <%! Lab4 lab4 = new Lab4("A rave (from the verb: to rave) describes a dance "
+            + "party at a warehouse, public or private property, typically featuring"
+            + " performances by DJs playing electronic dance music. The style is most"
+            + " associated with the early 90s dance music scene when DJs played at"
+            + " illegal events in musical styles dominated by electronic dance music"
+            + " from a wide range of sub-genres, including techno, hardcore, house,"
+            + " dubstep, and alternative dance. Occasionally live musicians have been"
+            + " known to perform at raves, in addition to other types of performance "
+            + "artists such as go-go dancers and fire dancers. The music is amplified"
+            + " with a large, powerful sound reinforcement system, typically with large "
+            + "subwoofers to produce a deep bass sound. The music is often accompanied"
+            + " by laser light shows, projected coloured images, visual effects and"
+            + " fog machines. While some raves may be small parties held at nightclubs"
+            + " or private homes, some raves have grown to immense size, such as the large"
+            + " festivals and events featuring multiple DJs and dance areas (e.g., the"
+            + " Castlemorton Common Festival in 1992). Some electronic dance music festivals"
+            + " have features of raves, but on a larger, often commercial scale. Raves may"
+            + " last for a long time, with some events continuing for twenty-four hours, "
+            + "and lasting all through the night. Law enforcement raids and anti-rave laws"
+            + " have presented a challenge to the rave scene in many countries. This is due"
+            + " to the association of illegal drugs such as MDMA (often referred to as a"
+            + " \"club drug\" or \"party drug\" along with MDA), amphetamine, LSD,"
+            + " GHB, ketamine, methamphetamine, cocaine, and cannabis. In addition to drugs,"
+            + " raves often make use of non-authorized, secret venues, such as squat parties"
+            + " at unoccupied homes, unused warehouses, or aircraft hangars. These concerns"
+            + " are often attributed to a type of moral panic surrounding rave culture. A "
+            + "sense of participation in a group event is among the chief appeals of rave "
+            + "music and dancing to pulsating beats is its immediate outlet. Raving in itself"
+            + " is a syllabus-free dance, whereby the movements are not predefined and the dance"
+            + " is performed randomly, dancers take immediate inspiration from the music, their"
+            + " mood and watching other people dancing. Thus, the electronic, rave and club"
+            + " dances refer to the street dance styles that evolved alongside electronic music"
+            + " culture. Such dances are street dances since they evolved alongside the"
+            + " underground rave and club movements, without the intervention of dance studios."
+            + " These dances were originated in some 'scenes' around the world, becoming known "
+            + "only to ravers or clubgoers who attempt to these locations. They were originated "
+            + "at some point that certain moves had begun to be performed to several people at "
+            + "those places, creating a completely freestyle, yet still highly complex set of "
+            + "moves, adaptable to every dancer change and dance whatever they want based on "
+            + "these moves. Many rave dancing techniques suggest using your body as an extension"
+            + " of the music, to loosen up, and let the music flow through the body to create "
+            + "a unique form of movement.[citation needed] A common feature shared by all these "
+            + "dances, along with being originated at clubs, raves and music festivals around "
+            + "the world and in different years, is that when YouTube and other social media "
+            + "started to become popular (around 2006), these dances began to be popularised by"
+            + " videos of raves performing them, recording and uploading their videos.[citation needed]"
+            + " Therefore, they began to be practised outside their places of origin, creating different"
+            + " 'scenes' in several countries. Furthermore, some of these dances began to evolve, "
+            + "and these dance 'scenes' are not totally related to the club/rave scenes they were "
+            + "originated. Also, the way of teaching and learning them have changed. In the past, "
+            + "if someone wanted to learn one of these dances, the person had to go to a club/rave, "
+            + "watch people dancing and try to copy them. Now,[when?] with social media, these dances "
+            + "are mostly taught on video tutorials and the culture spreads and grows inside those social "
+            + "media, like Flogger on Fotolog, Rebolation, Sensualize and Free Step on Orkut "
+            + "and Cutting Shapes on Instagram. Due to the lack of studies dedicated to those dances, "
+            + "combined with poor and inaccurate information of them available on the Internet, it is "
+            + "hard to find reliable information.");%>
+        <p><b>Text:</b> <%= lab4.GetText()%></p>
+        <p><b>Cleared text:</b> <%= lab4.GetClearedText()%></p>
+        <p><b>Number of words:</b> <%= lab4.GetWordsNumber()%></p>
+        <p><b>Number of unique words:</b> <%= lab4.GetUniqueWordsNumber()%></p>
+        <p><b>Most popular words(3):</b> <%= lab4.GetFirstNMostPopularWords(6)%></p>
+        <p><b>Number of words that do not contain letter (p):</b>
+            <%= lab4.GetNumberOfWordsThatNotContain('p')%></p>
+        <p><b>Number of words that contain 4 different letters (4):</b>
+            <%= lab4.GetNumberOfWordsThatContainLetters(4)%></p>
+        <p><b>Most popular sequences (4):</b>
+            <%= lab4.MostPopularSequences(4, 3)%></p>
+    </body>
+</html>
