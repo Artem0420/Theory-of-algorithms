@@ -1,6 +1,6 @@
 package markichev.IR11;
 
-import markichev.IR11.Exam.Calculator;
+import markichev.IR11.Exam.Mychot;
 import markichev.IR11.Exam.FormulaResults;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ class Ir11ApplicationTests {
     @Test
     void testFormula()
     {
-        assertEquals(4, Calculator.Myformula(2));
+        assertEquals(4,Mychot.Myformula(2));
     }   
     
     @Test
