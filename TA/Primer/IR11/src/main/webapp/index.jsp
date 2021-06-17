@@ -9,12 +9,12 @@
     </head>
     <body>
         <form action="./formula" method="post" class="form-inline">
-            <label for="x"><b>Enter x:11111111111111111</b></label>
+            <label for="x"><b>Enter 5  x:</b></label>
             <div class="input-group">
                 <input  class="form-control" id="x" type="text" name="x"/>
                 <input class="btn btn-success" type="submit" value="Submit"/>
             </div>
-            <p class="mt-3 mb-0"><b></b><%=request.getAttribute("result")%></p>
+            <!--<p class="mt-3 mb-0"><b></b><%=request.getAttribute("result")%></p>-->
         </form>
         <%! FormulaResults fr = new FormulaResults(10); %>
         <p>Args: <%= fr.GetArgs()%> </p>
