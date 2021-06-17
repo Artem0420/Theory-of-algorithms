@@ -11,7 +11,7 @@ package markichev.IR11.Exam;
  */
 public class Calculator {
 
-    public static double Calculate(double x)
+    public static double Myformula(double x)
     {
         double z = (x * x);
         return z;

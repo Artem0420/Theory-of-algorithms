@@ -42,7 +42,7 @@ public class FormulaResults {
 
         for (int i = 0; i < length; i++){
             double param1=args.get(i);
-            results.add(Calculator.Calculate(param1));
+            results.add(Calculator.Myformula(param1));
         }
             
         
