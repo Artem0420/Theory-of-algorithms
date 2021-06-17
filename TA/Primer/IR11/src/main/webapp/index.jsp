@@ -1,25 +1,23 @@
 
-<%@page import="markichev.IR11.Exam.FormulaResults"%>
+<%@page import="markichev.IR11.Exam.DoFunc"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Exem Page Page</title>
     </head>
     <body>
-        <form action="./formula" method="post" class="form-inline">
-            <label for="x"><b>Enter 9  x:</b></label>
-            <div class="input-group">
-                <input  class="form-control" id="x" type="text" name="x"/>
-                <input class="btn btn-success" type="submit" value="Submit"/>
-            </div>
-            <p class="mt-3 mb-0"><b></b><%=request.getAttribute("result")%></p>
-        </form>
-        <%! FormulaResults fr = new FormulaResults(10); %>
-        <p>Args: <%= fr.GetArgs()%> </p>
-        <p>Results:<%= fr.Calculate() %></p>
-        
-        
+        <%! DoFunc mygen = new DoFunc(70);%>
+
+        <div style="display: block">
+            Сгенерить 70 случайных чисел: <%= mygen.getmyFunNumbers()%> 
+        </div>
+        <br>
+        <div style="display: block">
+            Результат: <%= mygen.DoCalculate()%>
+        </div>
+
+
     </body>
 </html>

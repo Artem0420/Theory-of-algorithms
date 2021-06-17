@@ -1,7 +1,7 @@
 package markichev.IR11;
 
-import markichev.IR11.Exam.Mychot;
-import markichev.IR11.Exam.FormulaResults;
+import markichev.IR11.Exam.funcOnExem;
+import markichev.IR11.Exam.DoFunc;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,24 +9,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class Ir11ApplicationTests {
 
+      
     @Test
-    void contextLoads() {
-    }
-
-    @Test
-    void testFormula()
+    void testNumbers()
     {
-        assertEquals(4,Mychot.Myformula(2));
-    }   
-    
-    @Test
-    void testFormulaWithManyArgs()
-    {
-        FormulaResults fr = new FormulaResults();
-        double[] args = new double[]{3d, 4d, 5d};
-        fr.SetArgs(args);
-        assertEquals("[9.0, 16.0, 25.0]", fr.Calculate());
+        DoFunc cl = new DoFunc();
+        double[] args = new double[]{1d, 2d};
+        cl.SetArgs(args);
+        assertEquals("[0.83, 0.43]", cl.DoCalculate());
     }
     
-   
 }
