@@ -16,8 +16,8 @@ class Ir11ApplicationTests {
     @Test
     void testFormula()
     {
-        assertEquals(4, Calculator.Calculate(2));
-    }
+        assertEquals(4, Calculator.Myformula(2));
+    }   
     
     @Test
     void testFormulaWithManyArgs()
